@@ -1,0 +1,39 @@
+body{
+    margin:0;
+
+}
+
+nav{
+    background-color: aquamarine;
+    height: 100px;
+    width: 100%;
+}
+
+footer{
+    background-color: aquamarine;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rede-social{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.social-img img{
+    height: 30px;
+    width: 30px;
+}
+
+.social-img{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.endereco span{
+    font-weight: bolder;
+}
