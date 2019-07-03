@@ -6,21 +6,41 @@ body{
 nav{
     background-color: aquamarine;
     height: 100px;
+    list-style-type: none;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+}
+
+nav a{
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.logo a{
+    border-style: none;
+}
+
+nav a img{
+    height: 70px;
+    width: 80px;
 }
 
 footer{
     background-color: aquamarine;
     height: 150px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .rede-social{
     display: flex;
     flex-direction: column;
-
 }
 
 .social-img img{
