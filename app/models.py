@@ -11,14 +11,14 @@ zonas = [
 ]
 
 class Medico(models.Model):
-    nome_Medico = models.CharField(max_length=30)
-    CRM = models.CharField(max_length=20)
-    especialidade = models.CharField(max_length = 20)
-    endereco = models.CharField(max_length=30)
-    CEP = models.CharField(max_length=9)
-    regiao = models.CharField(max_length=20, choices=zonas)
-    telefone = models.CharField(max_length=15)
-    email = models.CharField(max_length = 40)
+    nome_Medico = models.CharField(max_length=30, default="")
+    CRM = models.CharField(max_length=20, default="")
+    especialidade = models.CharField(max_length = 20, default="")
+    endereco = models.CharField(max_length=30, default="")
+    CEP = models.CharField(max_length=9, default="")
+    regiao = models.CharField(max_length=20, choices=zonas, default="")
+    telefone = models.CharField(max_length=15, default="")
+    email = models.CharField(max_length = 40, default="")
     
 
     def __str__(self):
@@ -26,10 +26,10 @@ class Medico(models.Model):
 
 
 class Contato(models.Model):
-    nome = models.CharField(max_length=30)
-    email = models.CharField(max_length=40)
-    telefone = models.CharField(max_length=15)
-    mensagem = models.CharField(max_length=300)
+    nome = models.CharField(max_length=30, default="")
+    email = models.CharField(max_length=40, default="")
+    telefone = models.CharField(max_length=15, default="")
+    mensagem = models.CharField(max_length=300, default="")
 
     def __str__(self):
         return  self.nome
