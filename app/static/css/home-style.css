@@ -1,11 +1,25 @@
 .leia-mais{
-    background-color: yellow;
-    height: 400px;  
+    background-color: white;
+    background: url(/static/images/foto.jpg) 50% 0 no-repeat fixed;
+    height: 400px; 
+}
+
+.leia-mais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leia-mais p{
+    color:yellow;
 }
 
 .vantagens{
     background-color: palevioletred;
     height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
 }
 
 .acredita{

@@ -1,10 +1,10 @@
 body{
     margin:0;
-
+    font-family: 'Righteous', cursive;
 }
 
 nav{
-    background-color: aquamarine;
+    background-color: #633F62;
     height: 100px;
     list-style-type: none;
     width: 100%;
@@ -17,6 +17,7 @@ nav a{
     border-radius: 10px 10px 10px 10px;
     border-style: solid;
     border-width: 2px;
+    color: white;
     padding: 5px;
     text-decoration: none;
 }
@@ -26,8 +27,8 @@ nav a{
 }
 
 nav a img{
-    height: 70px;
-    width: 80px;
+    height: 100px;
+    width: 110px;
 }
 
 footer{

@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="{% static 'css/layout-style.css' %}">
     <link rel="stylesheet" href="{% static 'css/home-style.css' %}">
     <title>Dr. Ella</title>
 </head>
 <body>
     <nav>
-        <li class = "logo"><a href=""><img src="{% static 'images/dr-ella.png' %}" alt=""></a></li>
-        <li><a href="">CONSULTA</a></li>
-        <li><a href="">SOBRE NÓS</a></li>
-        <li><a href="">CONTATO</a></li>
-        <li><a href="">LOGIN</a></li>
+        <li class = "logo"><a href="/"><img src="{% static 'images/dr-ella.png' %}" alt=""></a></li>
+        <li><a href="/sobre-nos">SOBRE NÓS</a></li>
+        <li><a href="/contato">CONTATO</a></li>
+        <!-- <li><a href="login/">LOGIN</a></li> -->
+        <li><a href="/busca">BUSCA</a></li>
+        <li>idioma</li>
     </nav>
 {% block content %}
 
@@ -37,7 +39,7 @@
             <p>Bela Vista, São Paulo - SP, 01310-100</p>
         </div> 
 
-        <div>quem apoiamos</div>
+        <div>Quem apoiamos</div>
     </footer>
 </body>
 </html>
