@@ -1,46 +1,49 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/layout-style.css' %}">
     <link rel="stylesheet" href="{% static 'css/home-style.css' %}">
     <link rel="stylesheet" href="{% static 'css/contato-style.css' %}">
     <title>Dr. Ella</title>
 </head>
+
 <body>
     <nav>
-        <li class = "logo"><a href="/"><img src="{% static 'images/dr-ella.png' %}" alt=""></a></li>
+        <li class="logo">
+            <a href="/"><img src="{% static 'images/dr-ella.png' %}" alt=""></a>
+        </li>
         <li><a href="/sobre-nos">SOBRE NÓS</a></li>
         <li><a href="/contato">CONTATO</a></li>
         <!-- <li><a href="login/">LOGIN</a></li> -->
         <li><a href="/busca">BUSCA</a></li>
         <li>idioma</li>
     </nav>
-{% block content %}
-
-{% endblock %}
+    {% block content %} {% endblock %}
     <footer>
-        <div class = "rede-social">
+        <div class="rede-social">
             <div>
                 <p>REDES SOCIAIS</p>
             </div>
-            <div class = "social-img">
+            <div class="social-img">
                 <a href="www.facebook.com"><img src="{% static 'images/facebook.png' %}" alt="facebook-logo"></a>
                 <a href="www.instagram.com"><img src="{% static 'images/instagram.png' %}" alt="instagram-logo"></a>
                 <a href="www.linkedin.com"><img src="{% static 'images/linkedin.png' %}" alt="linkedin-logo"></a>
             </div>
         </div>
-        <div class = "endereco">
+        <div class="endereco">
             <p> <span>Localização</span> </p>
             <p>Av. Paulista, 1374, 5° andar</p>
             <p>Bela Vista, São Paulo - SP, 01310-100</p>
-        </div> 
+        </div>
 
         <div>Quem apoiamos</div>
     </footer>
 </body>
+
 </html>

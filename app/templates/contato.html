@@ -1,20 +1,13 @@
 {% extends 'layout.html' %} {% load staticfiles %} {% block content %}
+<div class="fale conosco">
 
-<p>Fale Conosco</p>
 
-<section class="fale-conosco">
-
-<div class="formulario-cx">
-    {% if msg %}    
-        <p>{{ msg }}</p>
-    {% endif %}
-    <form method='POST'>
-        {% csrf_token %}
-        {{ form }}
-        <button type="submit">Enviar</button>
-    </form>
-    <a href="/">Voltar</a>
 </div>
-    
-</section>
+
+<p>aqui fica o formulário</p>
+<form method='POST'>
+    {% csrf_token %} {{ form }}
+    <button type="submit">Fazer submit</button>
+</form>
+
 {% endblock %}
