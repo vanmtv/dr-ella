@@ -13,5 +13,18 @@ def mostrar_busca(request):
     return render(request, 'busca.html')
 
 def mostrar_contato(request):
-    return render(request, 'contato.html')
+    formulario = ContatoForm(request.POST or None)
+    msg = ''
+
+    if formulario.is_valid():
+        formulario.save()
+        formulario = ContatoForm()
+        msg = 'Mensagem enviada com sucesso'
+
+    contexto = {
+        'form' : formulario,
+        'msg' : msg
+    }
+    return render(request, 'contato.html', contexto)
+#    return render(request, 'contato.html')
 
