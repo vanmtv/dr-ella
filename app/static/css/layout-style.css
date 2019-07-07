@@ -58,3 +58,39 @@ footer{
 .endereco span{
     font-weight: bolder;
 }
+
+
+
+/* start dark google translate theme */
+
+.goog-te-gadget-simple{
+background: transparent;
+border: none;
+}
+
+  
+  div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{
+    color: #633F62;
+  }
+      
+  div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover{
+    color:#633F62;
+  }
+  /* end dark google translate theme */
+  
+  /* styling */
+  
+  
+  .tradutor{
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      color: white;
+
+  }
+  
+  #google_translate_element {
+    display: none;
+  }
