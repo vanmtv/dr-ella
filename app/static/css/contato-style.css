@@ -1,0 +1,20 @@
+.fale-conosco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fale-conosco form{
+    width: 400px;
+    background-color: greenyellow;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.formulario-cx form button{
+    border-block: none;
+    margin: 10px;
+    padding: 10px;
+}

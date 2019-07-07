@@ -2,14 +2,19 @@
 
 <p>Fale Conosco</p>
 
-<div class="fale-conosco">
+<section class="fale-conosco">
+
+<div class="formulario-cx">
     {% if msg %}    
         <p>{{ msg }}</p>
     {% endif %}
     <form method='POST'>
         {% csrf_token %}
         {{ form }}
-        <button type="submit">Submit</button>
+        <button type="submit">Enviar</button>
     </form>
+    <a href="/">Voltar</a>
 </div>
+    
+</section>
 {% endblock %}
