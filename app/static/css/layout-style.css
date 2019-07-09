@@ -1,16 +1,18 @@
 body{
     margin:0;
-    font-family: 'Righteous', cursive;
+    font-family:  'Unica One', cursive;
+
 }
 
 nav{
-    background-color: #633F62;
+    background-color: #8A05BE;
     height: 100px;
     list-style-type: none;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;   
+    flex-direction: row;
 }
 
 nav a{
@@ -21,14 +23,31 @@ nav a{
     padding: 5px;
     text-decoration: none;
 }
-
+nav a:hover{
+    color: #55D8B8;
+    font-weight: 800;
+    font-style: bolder;
+}
 .logo a{
     border-style: none;
 }
 
 nav a img{
-    height: 100px;
-    width: 110px;
+    height: 60px;
+    width: 113px;
+}
+.cadastro{
+    display: contents;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.login{
+    display: contents;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 
 footer{
