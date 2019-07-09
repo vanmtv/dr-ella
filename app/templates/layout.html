@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script defer src="{% static 'js/script.js' %}"></script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <link href="https://fonts.googleapis.com/css?family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/layout-style.css' %}">
     <link rel="stylesheet" href="{% static 'css/home-style.css' %}">
     <link rel="stylesheet" href="{% static 'css/contato-style.css' %}">
@@ -27,14 +29,14 @@
             <li class="cadastro"><a href="/cadastro">CADASTRO</a></li>
             <li class="login"><a href="login/">LOGIN</a></li>
         </div>
-
+        
         <li id="google_translate_element"></li>
         <li>
             <img class="tradutor" onclick="mostrar()" src="{% static 'images/globowhite.png' %}" alt="globo">
         </li>
         <script type="text/javascript">
             function googleTranslateElementInit() {
-                new google.translate.TranslateElement({pageLanguage: 'pt', includedLanguages: 'en,es,fr,ar,pt,ur', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                new google.translate.TranslateElement({ pageLanguage: 'pt', includedLanguages: 'en,es,fr,ar,pt,ur', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
             }
         </script>
         
@@ -43,26 +45,38 @@
     
     {% block content %} {% endblock %}
     <footer>
-        <div class="rede-social">
-            <div>
-                <p>REDES SOCIAIS</p>
-            </div>
-            <div class="social-img">
-                <a href="https://www.facebook.com/"><img src="{% static 'images/facebook.png' %}" alt="facebook-logo"></a>
-                <a href="https://www.instagram.com/"><img src="{% static 'images/instagram.png' %}" alt="instagram-logo"></a>
-                <a href="https://www.linkedin.com/"><img src="{% static 'images/linkedin.png' %}" alt="linkedin-logo"></a>
-            </div>
-        </div>
-        <div class="endereco">
-            <p> <span>Localização</span> </p>
-            <p>Av. Paulista, 1374, 5° andar</p>
-            <p>Bela Vista, São Paulo - SP, 01310-100</p>
-        </div>
         
-        <div>Quem apoiamos</div>
-        
-        
-    </footer>
-</body>
-
-</html>
+        <div class="social-img">
+            
+            <h1>Redes Sociais</h1>
+            
+            <a href="https://www.facebook.com/"><img src="{% static 'images/facebook-icon.png' %}"
+                alt="facebook-logo"></a>
+                <a href="https://www.instagram.com/"><img src="{% static 'images/instagram-icon.png' %}"
+                    alt="instagram-logo"></a>
+                    <a href="https://www.linkedin.com/"><img src="{% static 'images/linkedin-icon.png' %}"
+                        alt="linkedin-logo"></a>
+                        
+                    </div>
+                    
+                    <div class="endereco">
+                        
+                    </h1> <span>Localização</span>
+                    <h1>
+                        
+                        <p>Av. Paulista, 1374, 5° andar</p>
+                        <p>Bela Vista, São Paulo - SP, 01310-100</p>
+                    </div>
+                    
+                    <div>
+                        <h1>
+                            Quem nos apoia
+                        </h1>
+                        
+                    </div>
+                    
+                    
+                </footer>
+            </body>
+            
+            </html>

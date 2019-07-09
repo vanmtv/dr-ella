@@ -1,7 +1,7 @@
 body{
     margin:0;
     font-family:  'Unica One', cursive;
-
+    
 }
 
 nav{
@@ -51,11 +51,16 @@ nav a img{
 }
 
 footer{
-    background-color: aquamarine;
-    height: 150px;
+    background-color: #8A05BE;
+    height: 250px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    font-family: 'Patua One', cursive;
+    
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    justify-content: space-around;
 }
 
 .rede-social{
@@ -66,16 +71,29 @@ footer{
 .social-img img{
     height: 30px;
     width: 30px;
+    
 }
 
 .social-img{
-    display: flex;
-    justify-content: space-around;
-    width: 200px;
+    justify-content: flex-end;
+    flex-direction: column;
+    display: inline-block;
+}
+
+.social-img h1{
+    font-size: 15pt;
 }
 
 .endereco span{
     font-weight: bolder;
+}
+
+footer div h1{
+    font-size: 15pt;
+}
+
+.endereco p{
+    font-size: 10pt;
 }
 
 
