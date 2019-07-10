@@ -19,26 +19,35 @@
 
 <body>
     <nav>
-        <li class="logo">
-            <a href="/"><img src="{% static 'images/logo.png' %}" alt=""></a>
-        </li>
-        <li><a href="/sobre-nos">SOBRE NÓS</a></li>
-        <li><a href="/funciona">COMO FUNCIONA</a></li>
-        <li><a href="/contato">CONTATO</a></li>
         <div>
+            <li class="logo">
+                <a href="/"><img src="{% static 'images/logo.png' %}" alt=""></a>
+            </li>
+        </div>
+        <div class="nav-buttons">
+            <li><a href="/sobre-nos">SOBRE NÓS</a></li>
+            <li class="botao1"><a href="/funciona">COMO FUNCIONA</a></li>
+            <li><a href="/contato">CONTATO</a></li>
+        </div>
+        <div class="lupa">
+                <li><a href="/busca"><img src="{% static 'images/lupa.png' %}" alt=""></a></li>
+        </div>
+        <div class="nav-login">
             <li class="cadastro"><a href="/cadastro">CADASTRO</a></li>
             <li class="login"><a href="/login">LOGIN</a></li>
         </div>
-        
-        <li id="google_translate_element"></li>
-        <li>
-            <img class="tradutor" onclick="mostrar()" src="{% static 'images/globowhite.png' %}" alt="globo">
-        </li>
-        <script type="text/javascript">
-            function googleTranslateElementInit() {
-                new google.translate.TranslateElement({ pageLanguage: 'pt', includedLanguages: 'en,es,fr,ar,pt,ur', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-            }
-        </script>
+       
+        <div class="translate">
+            <li id="google_translate_element"></li>
+            <li>
+                <img class="tradutor" onclick="mostrar()" src="{% static 'images/globowhite.png' %}" alt="globo">
+            </li>
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'pt', includedLanguages: 'en,es,fr,ar,pt,ur', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+                }
+            </script>
+        </div>
         
     </nav>
     

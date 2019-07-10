@@ -7,25 +7,45 @@ nav{
     background-color: #8A05BE;
     height: 100px;
     list-style-type: none;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: space-around;   
+    justify-content: space-between;   
     flex-direction: row;
+    position: fixed;
 }
 
-nav a{
+.nav-buttons{
+    display: flex;
+    width: 65%;
+}
+
+.botao1{
+    margin: 0 1rem 0 1rem;
+}
+
+.nav-buttons a{
+    text-decoration: none;
+    color: white;
+    
+}
+.nav-buttons a:hover{
     border-radius: 10px 10px 10px 10px;
     border-style: solid;
     border-width: 2px;
-    color: white;
+    color: #55D8B8 ;
     padding: 5px;
     text-decoration: none;
-}
-nav a:hover{
-    color: #55D8B8;
     font-weight: 800;
-    font-style: bolder;
+}
+.nav-login a{
+    color: #55D8B8 ;
+    text-decoration: none;
+    font-weight: 800;
+    border-bottom: 2px solid #55D8B8;
+}
+.logo{
+    margin: 0 0 0 2rem;
 }
 .logo a{
     border-style: none;
@@ -35,20 +55,27 @@ nav a img{
     height: 60px;
     width: 113px;
 }
+
+.nav-login{
+    display: flex;
+    
+}
+
+.lupa img{
+    width: 25px;
+    height: 25px;
+}
 .cadastro{
-    display: contents;
-    width: 20px;
-    height: 20px;
     cursor: pointer;
+    margin: 0 1rem 0 0;
 }
 
 .login{
-    display: contents;
-    width: 20px;
-    height: 20px;
     cursor: pointer;
 }
-
+.translate{
+    margin: 0 2rem 0 0;
+}
 footer{
     background-color: #8A05BE;
     height: 250px;
@@ -60,6 +87,7 @@ footer{
     -webkit-align-items: center;
     -webkit-justify-content: center;
     justify-content: space-around;
+    width: 100vw;
 }
 
 .rede-social{
