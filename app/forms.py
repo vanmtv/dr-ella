@@ -1,7 +1,6 @@
 from django import forms
 from app.models import Contato
 from app.models import Cadastro
-# from app.models import Login
 
 class ContatoForm(forms.ModelForm):
     class Meta:
@@ -15,7 +14,6 @@ class ContatoForm(forms.ModelForm):
         ]
 
 class CadastroForm(forms.ModelForm):
-    password = forms.CharField(widget=forms.PasswordInput())
     class Meta:
         model = Cadastro
         fields = [
@@ -23,9 +21,11 @@ class CadastroForm(forms.ModelForm):
             'email',
             'nascimento',
             'telefone',
-            'username'
+            'username',
+            'password'
         ]
 
-# class LoginForm(forms.ModelForm):
-#     username = forms.CharField(max_lentgh=20)
-#     password = forms.CharField(max_lentgh=20, widget=forms.PasswordInput)
+class LoginForm(forms.Form):
+    username = forms.CharField(label='username')
+    password = forms.CharField(label= 'password', widget=forms.PasswordInput())
+

@@ -13,8 +13,10 @@
         {% csrf_token %} {{ form.as_p }}
         <button type="submit">Enviar</button>
     </form>
-
 </div>
+{% if msg %}
+    {{msg.as_p}}
+{% endif %}
 
 <a href="/">Voltar</a>
 

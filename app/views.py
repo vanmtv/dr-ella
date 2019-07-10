@@ -1,7 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from app.forms import ContatoForm
 from app.forms import CadastroForm
-# from app.forms import LoginForm
+from app.forms import LoginForm
+from app.models import Cadastro
+# from app.forms import BuscaForm
 
 # Create your views here.
 
@@ -32,7 +34,7 @@ def mostrar_contato(request):
 
 def mostrar_cadastro(request):
     formulario_cadastro = CadastroForm(request.POST or None)
-    msg = ''
+    msg = ' '
 
     if formulario_cadastro.is_valid():
         formulario_cadastro.save()
@@ -49,5 +51,19 @@ def mostrar_cadastro(request):
 def mostrar_funciona(request):
     return render(request, 'funciona.html')
 
-def mostrar_login(request):
-    return  render(request, 'login.html')
+
+
+def mostrar_login(request): 
+    formulario_login = LoginForm(request.POST or None)
+    msg = ' '
+    if formulario_login.is_valid():
+        username = formulario_login.cleaned_data['username']
+        password = formulario_login.cleaned_data['password']
+        user = Cadastro.objects.filter(username=username).first()
+        
+        if not user or user.password != password:
+            msg = 'deu ruim'
+        else:
+            return redirect('/busca')
+
+    return  render(request, 'login.html', {'form': formulario_login, 'msg': msg})
