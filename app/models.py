@@ -139,9 +139,12 @@ class Contato(models.Model):
 
 class Cadastro(models.Model):
     nome = models.CharField(max_length=50, default="")
-    email = models.EmailField(max_length=50, default="")
     nascimento = models.DateField()
     telefone = models.CharField(max_length=15, default="")
+    email = models.EmailField(max_length=50, default="")
+    username = models.CharField(max_length=20, default="")
+    password = models.CharField(max_length=20, default="")
 
     def __str__(self):
-        return  self.nome
+        return  self.username
+

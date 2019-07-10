@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from app.forms import ContatoForm
 from app.forms import CadastroForm
+# from app.forms import LoginForm
 
 # Create your views here.
 
@@ -49,4 +50,4 @@ def mostrar_funciona(request):
     return render(request, 'funciona.html')
 
 def mostrar_login(request):
-    return render(request, 'login.html')
+    return  render(request, 'login.html')
