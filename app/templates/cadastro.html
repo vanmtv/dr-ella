@@ -1,0 +1,21 @@
+{% extends 'layout.html' %} 
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="text_cadastro">
+    <h1>Cadastre-se</h1>
+</div>
+
+<div class="cadastre-se">
+
+    <form method='POST'>
+        {% csrf_token %} {{ form.as_p }}
+        <button type="submit">Enviar</button>
+    </form>
+
+</div>
+
+<a href="/">Voltar</a>
+
+{% endblock %}

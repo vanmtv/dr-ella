@@ -131,7 +131,17 @@ class Contato(models.Model):
     nome = models.CharField(max_length=50, default="")
     email = models.EmailField(max_length=40, default="")
     telefone = models.CharField(max_length=15, default="")
+    assunto = models.CharField(max_length=50, default="")
     mensagem = models.TextField(max_length=300, default="")
 
     def __str__(self):
         return  self.assunto
+
+class Cadastro(models.Model):
+    nome = models.CharField(max_length=50, default="")
+    email = models.EmailField(max_length=50, default="")
+    nascimento = models.DateField()
+    telefone = models.CharField(max_length=15, default="")
+
+    def __str__(self):
+        return  self.nome

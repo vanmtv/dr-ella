@@ -1,16 +1,26 @@
+
+.text_conosco{
+    background-color: greenyellow;
+    margin: 0;
+}
+
 .fale-conosco{
+    background-color: greenyellow;
+    height: 500px;
+    width: 100vw;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .fale-conosco form{
-    width: 400px;
-    background-color: greenyellow;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+
+   
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
 }
 
 .formulario-cx form button{
