@@ -1,6 +1,5 @@
 from django import forms
-from app.models import Contato
-from app.models import Cadastro
+from app.models import Contato, Cadastro
 
 class ContatoForm(forms.ModelForm):
     class Meta:
@@ -29,3 +28,5 @@ class LoginForm(forms.Form):
     username = forms.CharField(label='username')
     password = forms.CharField(label= 'password', widget=forms.PasswordInput())
 
+class BuscaForm(forms.Form):
+    search = forms.CharField(label='pesquisa')
