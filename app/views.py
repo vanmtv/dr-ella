@@ -66,4 +66,4 @@ def mostrar_login(request):
         else:
             return redirect('/busca')
 
-    return  render(request, 'login.html', {'form': formulario_login, 'msg': msg})
+    return render(request, 'login.html', {'form': formulario_login, 'msg': msg})
