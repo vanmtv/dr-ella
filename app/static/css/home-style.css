@@ -1,13 +1,17 @@
 .leia-mais{
     background-color: white;
-    background: url(/static/images/foto.jpg) 100% no-repeat fixed;
-    height: 400px; 
+    background-image: url(/static/images/banner-refugee.png);
+    background-size: cover; 
+    background-position: center;
+    height: 600px; 
 }
 
 .leia-mais{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .leia-mais p{

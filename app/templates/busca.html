@@ -1,6 +1,14 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <p>PESQUISE A ESPECIALIDADE</p>
-    
+    <h1>PESQUISE A ESPECIALIDADE</h1>
+    <p>Por exemplo: "Ginecologia"</p>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Pesquisar"/>
+    </form>
+    {% if msg %}
+        {{msg}}
+    {% endif %}
 {% endblock %}
