@@ -1,9 +1,6 @@
 from django.shortcuts import render, redirect
-from app.forms import ContatoForm
-from app.forms import CadastroForm
-from app.forms import LoginForm
-from app.models import Cadastro
-# from app.forms import BuscaForm
+from app.forms import ContatoForm, CadastroForm, LoginForm, BuscaForm
+from app.models import Cadastro, Medico
 
 # Create your views here.
 
@@ -14,7 +11,18 @@ def mostrar_sobre_nos(request):
     return render(request, 'sobre-nos.html')
 
 def mostrar_busca(request):
-    return render(request, 'busca.html')
+    form_busca = BuscaForm(request.POST or None)
+    msg = ' '
+
+    if form_busca.is_valid():
+        search = form_busca.cleaned_data['search']
+        busca = Medico.objects.filter(especialidade=search)
+        msg = ' '
+        if not busca and busca.search != search:
+            msg = 'Especialista não encontrado'
+        else:
+            msg = 'Medico encontrado'
+    return render(request, 'busca.html', {'form': form_busca, 'msg': msg })
 
 def mostrar_contato(request):
     formulario = ContatoForm(request.POST or None)
@@ -62,7 +70,7 @@ def mostrar_login(request):
         user = Cadastro.objects.filter(username=username).first()
         
         if not user or user.password != password:
-            msg = 'deu ruim'
+            msg = ''
         else:
             return redirect('/busca')
 

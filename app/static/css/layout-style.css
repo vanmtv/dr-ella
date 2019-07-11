@@ -16,9 +16,13 @@ nav{
     /* position: fixed; */
 }
 
+.logo {
+    width: 300px;
+}
+
 .nav-buttons{
     display: flex;
-    width: 65%;
+    width: 40%;
 }
 
 .botao1{
@@ -26,9 +30,8 @@ nav{
 }
 
 .nav-buttons a{
-    text-decoration: none;
     color: white;
-    
+    text-decoration: none;
 }
 .nav-buttons a:hover{
     border-radius: 10px 10px 10px 10px;
@@ -53,8 +56,8 @@ nav{
 }
 
 nav a img{
-    height: 30%;
-    width: 30%;
+    height: 50%;
+    width: 50%;
 }
 
 .nav-login{
@@ -77,6 +80,16 @@ nav a img{
 .translate{
     margin: 0 2rem 0 0;
 }
+
+.translate li{
+    width: 300px;
+}
+
+.translate li img{
+    height: 40px;
+    width: 40px;
+}
+
 footer{
     background-color: #8A05BE;
     height: 250px;
@@ -138,10 +151,21 @@ footer div h1{
     display: flex;
     flex-direction: row;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     color: white;
 }
+
+
+.translate{
+    width: 100px;  
+}
+
+.translate img{
+    height: 75%;
+    width: 75%;
+}
+ 
 
 #google_translate_element {
     display: none;
