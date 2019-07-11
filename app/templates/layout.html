@@ -30,13 +30,13 @@
             <li><a href="/contato">CONTATO</a></li>
         </div>
         <div class="lupa">
-                <li><a href="/busca"><img src="{% static 'images/lupa.png' %}" alt=""></a></li>
+            <li><a href="/busca"><img src="{% static 'images/lupa.png' %}" alt=""></a></li>
         </div>
         <div class="nav-login">
             <li class="cadastro"><a href="/cadastro">CADASTRO</a></li>
             <li class="login"><a href="/login">LOGIN</a></li>
         </div>
-       
+        
         <div class="translate">
             <li id="google_translate_element"></li>
             <li>
@@ -52,7 +52,10 @@
     </nav>
     
     
-    {% block content %} {% endblock %}
+    {% block content %} 
+    
+    {% endblock %}
+    
     <footer>
         
         <div class="social-img">
