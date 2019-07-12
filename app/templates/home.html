@@ -3,20 +3,22 @@
 {% load staticfiles %}
 
 {% block content %}
-    <header class = "leia-mais">
-        <h1>Sua comunidade para refugiadas</h1>
-        <a href="">Saiba Mais</a>
-        
-    </header>
-    <section class = "funciona">
-        <div>
-            <p>como funciona</p> 
-        </div>
-        
-        
-    </section>
-    <aside class = "acredita">
-        <p>o que acreditamos e quem somos</p>
-        
-    </aside>
+<header class = "leia-mais">
+    <div class="buscar">
+        <h1>Aqui é onde você refugiada encontra seu médico</h1>
+        <form action='/' method='post'>
+            <input type='text' name='pesquisa'>
+            <button type='submit'>Buscar</button>
+        </form>
+        <p>Se prefeerir ligue para (11) 4444-4444</p>            
+    </div>
+</header>
+<section class = "funciona">
+    <div>
+        <p>como funciona</p> 
+    </div>
+</section>
+<aside class = "acredita">
+    <p>o que acreditamos e quem somos</p>
+</aside>
 {% endblock %}

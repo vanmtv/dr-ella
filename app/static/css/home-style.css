@@ -1,11 +1,51 @@
 .leia-mais{
-    background-color: white;
-    background-image: url(/static/images/banner-refugee.png);
-    background-size: cover; 
+    background-image: linear-gradient(to left, transparent 0%, rgb(85, 17, 112) 95%), url(/static/images/banner-refugee.jpg);
+    background-size: 100%; 
     background-position: center;
     height: 600px; 
+    background-repeat: no-repeat;
+    
+    
+}
+.image-principal{
+    background-size: 100%;
+    background-position: center;
+    
+}
+form {
+  border: 2px solid white;
+  display: flex;
+  padding: 15px;
+  width: 50%;
+    border-radius: 30px;
+    align-items: center;
+    background: white;
+    cursor: pointer;
 }
 
+form > input {
+  border: none;
+  width: 85%;
+  height: 100%;
+}
+
+form > button {
+  background: #8A05BE;
+  border: none;
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 19px;
+}
+
+.buscar{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 20pt;
+    color: white;
+}
 .leia-mais{
     display: flex;
     align-items: flex-start;
@@ -15,7 +55,7 @@
 }
 
 .leia-mais p{
-    color:yellow;
+    color: black;
 }
 
 .funciona{
