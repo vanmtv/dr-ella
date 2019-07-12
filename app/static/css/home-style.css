@@ -4,6 +4,7 @@
     background-position: center;
     height: 600px; 
     background-repeat: no-repeat;
+    background-attachment: fixed;
     
     
 }
@@ -59,8 +60,8 @@ form > button {
 }
 
 .funciona{
-    background-color: palevioletred;
-    height: 200px;
+    background-color: white;
+    height: 60vh;
     display: flex;
     justify-content: space-around;
     align-items:center;
