@@ -25,8 +25,8 @@ class CadastroForm(forms.ModelForm):
         ]
 
 class LoginForm(forms.Form):
-    username = forms.CharField(label='username')
-    password = forms.CharField(label= 'password', widget=forms.PasswordInput())
+    username = forms.CharField(label='Nome de usuário')
+    password = forms.CharField(label= 'Senha', widget=forms.PasswordInput())
 
 class BuscaForm(forms.Form):
-    search = forms.CharField(label='pesquisa')
+    pesquisa = forms.CharField(label='Pesquisa')

@@ -112,6 +112,12 @@ especialidade= [
     ('UR', 'Urologia'),
 ]
 
+def buscar_sigla_especialidade(busca):
+    for item in especialidade:
+        if busca.lower() == item[1].lower():
+            return item[0]
+    return None
+
 class Medico(models.Model):
     nome_Medico = models.CharField(max_length=50, default="")
     CRM = models.CharField(max_length=20, default="")
@@ -147,4 +153,3 @@ class Cadastro(models.Model):
 
     def __str__(self):
         return  self.username
-

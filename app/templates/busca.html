@@ -7,8 +7,19 @@
         {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="Pesquisar"/>
+    
     </form>
-    {% if msg %}
-        {{msg}}
-    {% endif %}
+    
+    <div>
+        {% for med in medicos %}      
+            <p>NOME: {{med.nome_Medico}}</p>
+            <p>CRM: {{med.CRM}}</p>
+            <p>ESPECIALIDADE: {{med.especialidade}}</p>
+            <p>ENDEREÇO: {{med.endereco}}</p>
+            <p>CEP: {{med.CEP}}</p>
+            <p>REGIÃO: {{med.regiao_med}}</p>
+            <p>TELEFONE: {{med.telefone}}</p>
+            <p>EMAIL: {{med.email}}</p>    
+        {% endfor %}
+    </div>
 {% endblock %}
