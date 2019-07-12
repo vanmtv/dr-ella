@@ -63,9 +63,28 @@ form > button {
     background-color: white;
     height: 60vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items:center;
 }
+
+.icon{
+    display: flex;
+    flex-direction: row;
+}
+
+.text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 300px;
+    color: black;
+}
+section img{
+    width: 60px;
+    height: 60px;
+}
+
+
 
 .acredita{
     background-color: brown;
