@@ -84,9 +84,23 @@ section img{
     height: 60px;
 }
 
+.comentarios{
+    background-color: #8A05BE;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.texto-comentario{
+    background-color: white;
+    height: 40%;
+    margin: 0px 4rem 0px 2rem;
+    border-radius: 25px;
+    text-align: center;
+}
 
-.acredita{
-    background-color: brown;
-    height: 300px;
+.acreditamos{
+    background-color: white;
+    height: 60vh;
 }
