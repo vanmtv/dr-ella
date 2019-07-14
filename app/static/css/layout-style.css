@@ -1,6 +1,7 @@
 body{
     margin:0;
     font-family:  'Unica One', cursive;
+    width: 100vw;
 }
 
 nav{
@@ -8,7 +9,7 @@ nav{
     /* background-color: linear-gradient(to bottom, #8A05BE 0%, #8A05BE 46%, #8A05BE 100%); */
     height: 100px;
     list-style-type: none;
-    width: 100;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;   
@@ -22,8 +23,8 @@ nav{
 
 .nav-buttons{
     display: flex;
-    width: 40%;
-    margin: 0 20rem 0 0;
+    width: 60%;
+    margin: 0 10rem 0 0;
 }
 
 .botao1{
@@ -81,13 +82,13 @@ nav a img{
     margin: 0 5rem 0 0;
 }
 .translate{
-    margin: 0 2rem 0 0;
+    margin: 0 10rem 0 0;
 }
 
 
 .translate li img{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 }
 
 footer{
@@ -147,6 +148,7 @@ footer div h1{
     width: 80px;
 }
 
+
 .tradutor{
     display: flex;
     flex-direction: row;
@@ -165,7 +167,6 @@ footer div h1{
     height: 75%;
     width: 75%;
 }
- 
 
 #google_translate_element {
     display: none;
