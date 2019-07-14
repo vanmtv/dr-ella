@@ -63,13 +63,14 @@ form > button {
     background-color: white;
     height: 60vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items:center;
 }
 
 .icon{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .text{
@@ -82,7 +83,18 @@ form > button {
 section img{
     width: 60px;
     height: 60px;
+    margin: 0 3rem 0 0;
 }
+
+.seta-pai{
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -183%);
+}
+
+
 
 .comentarios{
     background-color: #8A05BE;
