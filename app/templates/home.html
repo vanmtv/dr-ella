@@ -1,101 +1,111 @@
-{% extends 'layout.html' %}
-
-{% load staticfiles %}
-
-{% block content %}
-<header class = "leia-mais">
-    <div class="buscar">
-        <h1>Aqui é onde você refugiada encontra seu médico</h1>
-        <form action='/'>
-            <input type='text' name='pesquisa'>
-            <button type='submit'>Buscar</button>
-        </form>
-        <p>Ou ligue para (11) 4444-4444</p>            
-    </div>
-    <div class="seta-pai">
-        <img class="seta" src="{% static 'images/seta.png' %}" alt="">
-    </div>
-</header>
-
-<section class = "funciona">
-
-<div class="texto-funciona">
-        <h1>Como funciona?</h1>
-</div>
-
-<div id="funciona2">
-
-    <div class="icon">
-        <img src="{% static 'images/tradutor.png' %}" alt="">
-        <div class="text">
-            <h1> Selecione uma língua</h1> 
-            <p>Para se sentir confortavel a navegar no nosso site, fique a vontade para selecionar a língua que você é fluente :)</p>
+{% extends 'layout.html' %} {% load staticfiles %} {% block content %}
+<section class="home">
+    <div class="container">
+        <div class="home-text">
+            <h1>Aqui é onde você refugiada <br>encontra seu médico</h1>
+            <div class="btn bg-purple" style="margin: 0px"> <a href=""> Pesquisar </a></div>
         </div>
     </div>
-    <div class="icon">
-        <img src="{% static 'images/cadastro.png' %}" alt="">
-        <div class="text">
-            <h1>Faça seu cadastro</h1>
-            <p>É simples e fácil, cadastre-se e tenha acesso ao agendamento com nossos médicos.</p>
+</section>
+
+<section class="funciona">
+    <div class="container">
+        <h2 class="section-title dark-gray">Como funciona?</h2>
+
+        <div class="funciona-cards">
+            <div class="funciona-card">
+                <div class="card-img">
+                    <img src="{% static 'images/tradutor.png' %}" alt="">
+                </div>
+                <div class="card-text">
+                    <h3> Selecione uma língua</h3>
+                    <p class="gray">Para se sentir confortavel a navegar no nosso site, fique a vontade para selecionar a língua que você é fluente :)</p>
+                </div>
+            </div>
+            <div class="funciona-card">
+                <div class="card-img">
+                    <img src="{% static 'images/cadastro.png' %}" alt="">
+                </div>
+                <div class="card-text">
+                    <h3>Faça seu cadastro</h3>
+                    <p class="gray">É simples e fácil, cadastre-se e tenha acesso ao agendamento com nossos médicos.</p>
+                </div>
+            </div>
+            <div class="funciona-card">
+                <div class="card-img">
+                    <img src="{% static 'images/buscar.png' %}" alt="">
+                </div>
+                <div class="card-text">
+                    <h3>Busque por especialidade ou região</h3>
+                    <p class="gray"> Para achar o medico perfeito para seu atendimento é só busca-lo por especialidade ou região, são mais de 50 especialidades!</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="icon">
-        <img src="{% static 'images/buscar.png' %}" alt="">
-        <div class="text">
-            <h1>Busque por especialidade ou região</h1>
-            <p> Para achar o medico perfeito para seu atendimento é só busca-lo por especialidade ou região, são mais de 50 especialidades!</p>
-        </div>
-    </div>
-
-
-</div>
 </section>
 
 <section class="comentarios">
-    <div class="texto-comentario">
-        <div>
-            <p>
-                    Se hoje é o dia das crianças... Ontem eu disse: o dia da criança é o dia da mãe, dos pais, das professoras, mas também é o dia dos animais. Lucia 20 anos
-            </p>
+    <div class="container">
+        <h2 class="section-title white"> Depoimentos </h2>
+        <div class="comentarios-box">
+            <div class="comentario">
+                <p>
+                    Respeito. Comprometimento. Integridade. São três palavras que definem o atendimento médico que o Dr. Ella proporciona. As meninas e os médicos são super atenciosos e respeitosos.
+                    <h3> Aysa, 48 anos. Síria </h3>
+
+                </p>
+            </div>
+            <div class="comentario">
+                <p>
+                    Desde que cheguei em São Paulo há uns 2 anos tive muita dificuldade de conseguir atendimento médico de qualidade até encontrar o Dr.Ella, hoje já realizei meu sexto encontro com os médicos da plataforma!
+                    <h3> Dakarai, 28 anos. Angola </h3>
+                </p>
+            </div>
+            <div class="comentario">
+                <p>
+                    A facilidade para encontrar os médicos de certas especialidades é uma maravilhosa. Tenho total confiança em passar com qualquer um dos médicos que o site oferece, as meninas fazem um excelente trabalho.
+                    <h3> Maria, 35 anos. Venezuela </h3>
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="texto-comentario">
-            <p>
-                    Se hoje é o dia das crianças... Ontem eu disse: o dia da criança é o dia da mãe, dos pais, das professoras, mas também é o dia dos animais. Lucia 20 anos
-            </p>
-    </div>
-    <div class="texto-comentario">
-            <p>
-                    Se hoje é o dia das crianças... Ontem eu disse: o dia da criança é o dia da mãe, dos pais, das professoras, mas também é o dia dos animais. Lucia 20 anos
-            </p>
-    </div>
-    <div class="texto-comentario">
-            <p>
-                    Se hoje é o dia das crianças... Ontem eu disse: o dia da criança é o dia da mãe, dos pais, das professoras, mas também é o dia dos animais. Lucia 20 anos
-            </p>
     </div>
 </section>
-<section class="acreditamos">
-    <div class="icon">
-            <img src="{% static 'images/mission.png' %}" alt="">
-            <div class="text">
-                <h1>Missão</h1> 
-                <p>Prover  serviços de qualidade e acessível voltados a saúde para mulheres refugiadas, por meio de redes de colaboração entre organizações de terceiro setor e médicos cadastrados.</p>
+
+<section class="institucional">
+    <div class="container">
+        <h2 class="section-title dark-gray">Em que acreditamos</h2>
+
+        <div class="institucional-box">
+            <div class="institucional-card">
+                <div class="institucional-img">
+                    <img src="{% static 'images/mission.png' %}" alt="">
+                </div>
+                <div class="institucional-text">
+                    <h3 class="dark-gray">Missão</h3>
+                    <p class="gray">Prover serviços de qualidade e acessível voltados a saúde para mulheres refugiadas, por meio de redes de colaboração entre organizações de terceiro setor e médicos cadastrados.</p>
+                </div>
+            </div>
+
+            <div class="institucional-card">
+                <div class="institucional-img">
+                    <img src="{% static 'images/heart.png' %}" alt="">
+                </div>
+                <div class="institucional-text">
+                    <h3 class="dark-gray">Visão</h3>
+                    <p class="gray">Ser reconhecida por promover ações e atendimento humanizado e de qualidade a mulheres refugiadas em diversas cidades brasileiras.</p>
+                </div>
+            </div>
+
+            <div class="institucional-card">
+                <div class="institucional-img">
+                    <img src="{% static 'images/respect.png' %}" alt="">
+                </div>
+                <div class="institucional-text">
+                    <h3 class="dark-gray">Valores</h3>
+                    <p class="gray"> Respeito pela diversidade cultural; Ètica, transparência em todos os processos de atendimentos; Valorização do trabalho dos colaboradores; Visão integrada e realista da assistência.</p>
+                </div>
             </div>
         </div>
-        <div class="icon">
-            <img src="{% static 'images/heart.png' %}" alt="">
-            <div class="text">
-                <h1>Visão</h1>
-                <p>Ser reconhecida por promover ações e atendimento humanizado e de qualidade a mulheres refugiadas em diversas cidades brasileiras.</p>
-            </div>
-        </div>
-        <div class="icon">
-            <img src="{% static 'images/respect.png' %}" alt="">
-            <div class="text">
-                <h1>Valores</h1>
-                <p> Respeito pela diversidade cultural;. - Ètica, transparência em todos os processos de atendimentos ; -Valorização do trabalho dos  colaboradores; -Visão integrada e realista da assistência.</p>
-            </div>
-        </div>
+    </div>
 </section>
 {% endblock %}

@@ -1,17 +1,11 @@
 {% extends 'layout.html' %} {% load staticfiles %} {% block content %}
-<div class="text_conosco">
-    <h1>Fale Conosco</h1>
-</div>
-
-<div class="fale-conosco">
-
-    <form method='POST'>
-        {% csrf_token %} {{ form.as_p }}
-        <button type="submit">Enviar</button>
-    </form>
-
-</div>
-
-<a href="/">Voltar</a>
-
+<section class="contato">
+    <div class="container">
+        <h2 class="section-title dark-gray">Fale conosco</h2>
+        <form method='POST'>
+            {% csrf_token %} {{ form.as_p }}
+            <button type="submit" class="btn bg-purple white">Enviar</button>
+        </form>
+    </div>
+</section>
 {% endblock %}

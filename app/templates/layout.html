@@ -7,92 +7,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script defer src="{% static 'js/script.js' %}"></script>
-    <script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <link href="https://fonts.googleapis.com/css?family=Unica+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="{% static 'css/layout-style.css' %}">
     <link rel="stylesheet" href="{% static 'css/home-style.css' %}">
     <link rel="stylesheet" href="{% static 'css/contato-style.css' %}">
     <link rel="stylesheet" href="{% static 'css/login-style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/busca-style.css' %}">
     <link rel="stylesheet" href="{% static 'css/sobre-nos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <title>Dr. Ella</title>
 </head>
 
 <body>
-    <nav>
-        <div>
-            <li class="logo">
-                <a href="/"><img src="{% static 'images/logo.png' %}" alt=""></a>
-            </li>
+    <nav class="nav">
+        <div class="container">
+            <div class="menu">
+                <ul class="nav-buttons">
+                    <li class="logo">
+                        <a href="/"><img src="{% static 'images/logo.png' %}" alt=""></a>
+                    </li>
+                    <li><a href="/sobre-nos">SOBRE NÓS</a></li>
+                    <li class="botao1"><a href="/funciona">COMO FUNCIONA</a></li>
+                    <li><a href="/contato">CONTATO</a></li>
+                </ul>
+                <ul class="nav-icon">
+                    <ul>
+                        <li>
+                            <a href="/busca"><img src="{% static 'images/lupa.png' %}" alt=""></a>
+                        </li>
+                    </ul>
+                    <div class="nav-buttons">
+                        <ul>
+                            <li class="cadastro"><a href="/cadastro">CADASTRO</a></li>
+                            <li class="login"><a href="/login">LOGIN</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-translate">
+                        <ul>
+                            <li id="google_translate_element" style="display: none"></li>
+                            <li>
+                                <img class="tradutor" onclick="mostrar()" src="{% static 'images/globowhite.png' %}" alt="globo">
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({
+                            pageLanguage: 'pt',
+                            includedLanguages: 'en,es,fr,ar,pt,ur',
+                            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                        }, 'google_translate_element');
+                    }
+                </script>
+            </div>
         </div>
-        <div class="nav-buttons">
-            <li><a href="/sobre-nos">SOBRE NÓS</a></li>
-            <li class="botao1"><a href="/funciona">COMO FUNCIONA</a></li>
-            <li><a href="/contato">CONTATO</a></li>
-        </div>
-        <div class="lupa">
-            <li><a href="/busca"><img src="{% static 'images/lupa.png' %}" alt=""></a></li>
-        </div>
-        <div class="nav-login">
-            <li class="cadastro"><a href="/cadastro">CADASTRO</a></li>
-            <li class="login"><a href="/login">LOGIN</a></li>
-        </div>
-        
-        <div class="translate">
-            <li id="google_translate_element"></li>
-            <li>
-                <img class="tradutor" onclick="mostrar()" src="{% static 'images/globowhite.png' %}" alt="globo">
-            </li>
-            
-        </div>
-        <script type="text/javascript">
-            function googleTranslateElementInit() {
-                new google.translate.TranslateElement({ pageLanguage: 'pt', includedLanguages: 'en,es,fr,ar,pt,ur', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-            }
-        </script>
     </nav>
-    
-    
-    {% block content %} 
-    
-    {% endblock %}
-    
+
+    {% block content %} {% endblock %}
+
     <footer>
-        
-        <div class="social-img">
-            
-            <h1>Redes Sociais</h1>
-            
-            <a href="https://www.facebook.com/"><img src="{% static 'images/facebook-icon.png' %}"
-                alt="facebook-logo"></a>
-                <a href="https://www.instagram.com/"><img src="{% static 'images/instagram-icon.png' %}"
-                    alt="instagram-logo"></a>
-                    <a href="https://www.linkedin.com/"><img src="{% static 'images/linkedin-icon.png' %}"
-                        alt="linkedin-logo"></a>
-                        
-                    </div>
-                    
-                    <div class="endereco">
-                        
-                    </h1> <span>Localização</span>
-                    <h1>
-                        
-                        <p>Av. Paulista, 1374, 5° andar</p>
-                        <p>Bela Vista, São Paulo - SP, 01310-100</p>
-                    </div>
-                    
-                    <div>
-                        <h1>
-                            Quem nos apoia
-                        </h1>
-                        
-                    </div>
-                    
-                    
-                </footer>
-            </body>
-            
-            </html>
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li>
+                        <h3 class="white">Av. Paulista, 1374, 5° andar <br> Bela Vista, São Paulo - SP, 01310-100</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3 class="white"> Quem nos apoia </h3>
+                    </li>
+                    <ul class="footer-social">
+                        <li>
+                            <img style="width: 80px" src="{% static 'images/vidasrefugiadas-acnur-rodape.png' %}" alt="facebook-logo">
+                        </li>
+                        <li>
+                            <img style="width: 80px" src="{% static 'images/aduslogo.png' %}" alt="facebook-logo">
+                        </li>
+                        <li>
+                            <img style="width: 80px" src="{% static 'images/missaopazlogo.png' %}" alt="facebook-logo">
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    <h3 class="white"> Rede sociais</h3>
+                    <ul class="footer-social">
+                        <li>
+                            <a href="https://www.facebook.com/" class="white"><img src="{% static 'images/facebook-icon.png' %}" alt="facebook-logo"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" class="white"><img src="{% static 'images/instagram-icon.png' %}" alt="instagram-logo"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" class="white"><img src="{% static 'images/linkedin-icon.png' %}" alt="linkedin-logo"></a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

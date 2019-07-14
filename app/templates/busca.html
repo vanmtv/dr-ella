@@ -1,25 +1,49 @@
-{% extends 'layout.html' %}
+{% extends 'layout.html' %} {% block content %}
+<section class="pesquisa">
+    <div class="container">
+        <div class="pesquisa-form">
+            <h1 class="dark-gray">PESQUISE A ESPECIALIDADE</h1>
+            <form action="" method="POST">
+                {% csrf_token %} {{ form.as_p }}
+                <p>Por exemplo: "Ginecologia"</p>
+                <input type="submit" value="Pesquisar" class="btn bg-purple white" />
+            </form>
+        </div>
 
-{% block content %}
-    <h1>PESQUISE A ESPECIALIDADE</h1>
-    <p>Por exemplo: "Ginecologia"</p>
-    <form action="" method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Pesquisar"/>
-    
-    </form>
-    
-    <div>
-        {% for med in medicos %}      
-            <p>NOME: {{med.nome_Medico}}</p>
-            <p>CRM: {{med.CRM}}</p>
-            <p>ESPECIALIDADE: {{med.especialidade}}</p>
-            <p>ENDEREÇO: {{med.endereco}}</p>
-            <p>CEP: {{med.CEP}}</p>
-            <p>REGIÃO: {{med.regiao_med}}</p>
-            <p>TELEFONE: {{med.telefone}}</p>
-            <p>EMAIL: {{med.email}}</p>    
-        {% endfor %}
+        <div class="pesquisa-result">
+            {% for med in medicos %}
+            <div class="pesquisa-med">
+                <ul>
+                    <li>
+                        <h3 class="dark-gray">{{med.nome_Medico}}</h3>
+                    </li>
+                    <li>
+                        <p><span>CMR:</span> {{med.CRM}}</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p><span>Especialidade:</span> {{med.especialidade}}</p>
+                    </li>
+                    <li>
+                        <p><span>Endereço</span> {{med.endereco}}</p>
+                    </li>
+                    <li>
+                        <p>CEP: {{med.CEP}}</p>
+                    </li>
+                    <li>
+                        <p><span>Região:</span> {{med.regiao_med}}</p>
+                    </li>
+                    <li>
+                        <p><span>Telefone:</span> {{med.telefone}}</p>
+                    </li>
+                    <li>
+                        <p><span>E-mail:</span> {{med.email}}</p>
+                    </li>
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
     </div>
+</section>
 {% endblock %}

@@ -1,0 +1,76 @@
+/*================================
+            Pesquisa
+==================================*/
+
+.pesquisa {
+    width: 100%;
+    min-height: 80vh;
+    padding: 50px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pesquisa-form {
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    border: solid 2px #d3d3d3;
+}
+
+.pesquisa-form h1 {
+    font-size: 2em;
+    margin: 15px auto;
+}
+
+.pesquisa-form [type="text"] {
+    width: 200px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: solid 2px #d3d3d3;
+}
+
+.pesquisa-form label {
+    display: none;
+}
+
+.pesquisa-result {
+    margin-top: 30px;
+    border-radius: 5px;
+    border: solid 2px #d3d3d3;
+    background-color: #f8f8f8;
+}
+
+.pesquisa-med {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 15px auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-bottom: solid 1px #d3d3d3;
+}
+
+.pesquisa-med h3 {
+    font-size: 1.6em;
+    margin: 10px auto;
+}
+
+.pesquisa-med ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pesquisa-med li {
+    margin-right: 25px;
+}
+
+.pesquisa-med span {
+    font-weight: bold;
+    color: #363636;
+}

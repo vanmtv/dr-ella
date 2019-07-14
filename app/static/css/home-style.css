@@ -1,138 +1,116 @@
-.leia-mais{
+/*================================
+            home
+==================================*/
+
+.home {
+    width: 100%;
+    height: 100vh;
     background-image: linear-gradient(to left, transparent 0%, rgb(85, 17, 112) 95%), url(/static/images/banner-refugee.jpg);
-    background-size: 100%; 
-    background-position: center;
-    height: 600px; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
-    
-}
-.image-principal{
     background-size: 100%;
     background-position: center;
-    
-}
-form {
-  border: 2px solid white;
-  display: flex;
-  padding: 15px;
-  width: 50%;
-  border-radius: 30px;
-  align-items: center;
-  background: white;
-  cursor: pointer;
-}
-
-form > input {
-  border: none;
-  width: 85%;
-  height: 100%;
-}
-
-form > button {
-  background: #8A05BE;
-  border: none;
-  color: #fff;
-  border-radius: 20px;
-  padding: 8px 19px;
-}
-
-.buscar{
-    flex-direction: column;
+    background-attachment: fixed;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 100%;
-    font-size: 20pt;
+}
+
+.home-text {
     color: white;
 }
-.leia-mais{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-}
 
-.leia-mais p{
-    color: black;
-}
-
-.funciona{
-    background-color: white;
-    height: 80vh;
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
-    flex-direction: column;
-    font-family: 'Heebo', sans-serif;
+.home-text h1 {
+    font-size: 3.5em;
+    margin-bottom: 40px;
 }
 
 
-#funciona2{
-   display: flex;
-   flex-direction: row;
-   align-items: center;
+/*----------------- Home - Como funciona */
+
+.funciona {
+    height: 400px;
 }
 
-.texto-funciona h1{
-    font-size: 25pt;
-    color: #8A05BE;
-    font-weight: bold;
-}
-
-
-.icon{
+.funciona-cards {
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-align: center;
-    margin: 0 31px 0px 0;
+    justify-content: space-between;
 }
 
-.text{
+.funciona-card {
+    width: 30%;
+}
+
+.funciona-card img {
+    width: 100px;
+}
+
+.funciona h3 {
+    font-size: 1.4em;
+    margin: 5px auto;
+    color: #363636;
+}
+
+
+/*----------------- Home - Depoimentos */
+
+.comentarios {
+    background-color: var(--purple);
+    height: 300px;
+}
+
+.comentarios-box {
     display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-    color: black;
-}
-section img{
-    width: 60px;
-    height: 60px;
-    margin: 0 3rem 0 0;
-}
-
-.seta-pai{
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -183%);
-}
-
-
-
-.comentarios{
-    background-color: #8A05BE;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 
-.texto-comentario{
+.comentario {
+    width: 30%;
+    padding: 15px;
+    box-sizing: border-box;
     background-color: white;
-    height: 40%;
-    margin: 0px 4rem 0px 2rem;
-    border-radius: 25px;
-    text-align: center;
+    border-radius: 5px;
 }
 
-.acreditamos{
-    background-color: white;
-    height: 60vh;
+.comentario h3 {
+    margin: 10px 0px;
+    color: var(--dark-gray);
+}
+
+.comentario p {
+    color: var(--gray);
+}
+
+
+/*----------------- Home - Institucional */
+
+.institucional {
+    height: 500px;
+}
+
+.institucional-box {
     display: flex;
-    justify-content: center;
-    align-items:center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.institucional-card {
+    width: 32%;
+}
+
+.institucional-img {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.institucional-img img {
+    width: 120px
+}
+
+.institucional-card h3 {
+    margin: 10px auto;
+    font-size: 1.4em;
 }
