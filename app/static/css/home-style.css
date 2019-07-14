@@ -61,7 +61,7 @@ form > button {
 
 .funciona{
     background-color: white;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     justify-content: space-around;
     align-items:center;
@@ -73,9 +73,14 @@ form > button {
 #funciona2{
    display: flex;
    flex-direction: row;
+   align-items: center;
 }
 
-
+.texto-funciona h1{
+    font-size: 25pt;
+    color: #8A05BE;
+    font-weight: bold;
+}
 
 
 .icon{
@@ -83,6 +88,7 @@ form > button {
     flex-direction: row;
     align-items: center;
     text-align: center;
+    margin: 0 31px 0px 0;
 }
 
 .text{
