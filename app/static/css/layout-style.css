@@ -23,7 +23,7 @@ nav{
 .nav-buttons{
     display: flex;
     width: 40%;
-    margin: 0px 20rem 0px 0px;
+    margin: 0 20rem 0 0;
 }
 
 .botao1{
@@ -69,6 +69,7 @@ nav a img{
 .lupa img{
     width: 25px;
     height: 25px;
+    margin: 0 3rem 0 0;
 }
 .cadastro{
     cursor: pointer;
@@ -77,6 +78,7 @@ nav a img{
 
 .login{
     cursor: pointer;
+    margin: 0 5rem 0 0;
 }
 .translate{
     margin: 0 2rem 0 0;
