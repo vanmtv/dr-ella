@@ -18,10 +18,10 @@ form {
   display: flex;
   padding: 15px;
   width: 50%;
-    border-radius: 30px;
-    align-items: center;
-    background: white;
-    cursor: pointer;
+  border-radius: 30px;
+  align-items: center;
+  background: white;
+  cursor: pointer;
 }
 
 form > input {
