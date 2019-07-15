@@ -20,3 +20,5 @@ function mostrar() {
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({ pageLanguage: 'pt', includedLanguages: 'en,es,fr,ar,pt,ur', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
 }
+
+googleTranslateElementInit();
