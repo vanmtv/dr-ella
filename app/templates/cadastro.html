@@ -2,12 +2,15 @@
 
 <section class="contato">
     <div class="container">
+        {% if msg %} 
+            <p>{{msg}}</p>
+        {% endif %}
         <h2 class="section-title dark-gray">Cadastro</h2>
 
         <form method='POST'>
             {% csrf_token %} {{ form.as_p }}
             <button type="submit" class="btn bg-purple white">Enviar</button>
         </form>
-    </div>
+    </div>  
 </section>
-{% if msg %} {{msg.as_p}} {% endif %} {% endblock %}
+ {% endblock %}
