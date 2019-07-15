@@ -2,10 +2,16 @@
 <section class="contato">
     <div class="container">
         <h2 class="section-title dark-gray">Fale conosco</h2>
+        {% if msg %} 
+            <p>{{msg}}</p>
+        {% endif %}  
         <form method='POST'>
             {% csrf_token %} {{ form.as_p }}
             <button type="submit" class="btn bg-purple white">Enviar</button>
         </form>
+        
     </div>
+    
 </section>
+
 {% endblock %}
