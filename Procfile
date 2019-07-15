@@ -1,1 +1,1 @@
-web: gunicorn drella.wsgi
+web: gunicorn projeto.wsgi
