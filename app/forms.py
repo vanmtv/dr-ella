@@ -23,6 +23,7 @@ class CadastroForm(forms.ModelForm):
             'username',
             'password'
         ]
+    password = forms.CharField(label='password', widget= forms.PasswordInput())
 
 class LoginForm(forms.Form):
     username = forms.CharField(label='Nome de usuário')
